@@ -1,17 +1,38 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<title>CUSTOMER DASHBOARD</title>
+<title>Customer Dashboard</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<h1>CUSTOMER DASHBOARD</h1>
+<h1>Customer Dashboard</h1>
+<p id="welcomeMsg"></p>
 
-<p>Welcome to Gregory Phone and Computer Services.</p>
+<section class="repair-ticket">
+<h2>My Repair Tickets</h2>
 
-<p>Your repair status will appear here.</p>
+<input type="text" id="ticketID" placeholder="Enter Ticket ID">
+<button onclick="checkTicket()">Check Status</button>
 
-</body>
-</htm
+<p id="ticketStatus"></p>
+</section>
+
+<script src="script.js"></script>
+<script>
+    // Get logged-in user
+    let user = sessionStorage.getItem("loggedInUser");
+    document.getElementById("welcomeMsg").innerHTML = "Welcome, " + user + "!";
+function checkTicket(){
+        let id = document.getElementById("ticketID").value;
+        let status = document.getElementById("ticketStatus");
+
+        if(user && customers[user].tickets[id]){
+            status.innerHTML = customers[user].tickets[id];
+            status.style.color = "green";
+        } else {
+            status.innerHTML = "Ticket ID not found or does not belong to you.";
+            status.style.color = "red";
+        }
+    }
+</script>

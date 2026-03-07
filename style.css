@@ -265,3 +265,39 @@ right:15px;
 font-size:20px;
 cursor:pointer;
 }
+
+.repair-ticket{
+background:#f2f2f2;
+padding:20px;
+border-radius:10px;
+max-width:400px;
+margin:30px auto;
+text-align:center;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.repair-ticket input{
+padding:10px;
+width:80%;
+margin-bottom:10px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+.repair-ticket button{
+padding:10px 20px;
+border:none;
+border-radius:5px;
+background:#111;
+color:white;
+cursor:pointer;
+font-weight:bold;
+}
+.repair-ticket button:hover{
+background:#333;
+}
+
+#ticketStatus{
+margin-top:15px;
+font-weight:bold;
+}

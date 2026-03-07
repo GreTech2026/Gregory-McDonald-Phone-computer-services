@@ -91,5 +91,83 @@ message.innerHTML = "Incorrect username or password.";
 
 }
 
+function checkTicket(){
+
+let id = document.getElementById("ticketID").value;
+let status = document.getElementById("ticketStatus");
+
+// Example repair tickets
+let tickets = {
+"GP1001":"Your phone repair is complete. Ready for pickup.",
+"GP1002":"Your laptop is being repaired. Estimated ready in 2 days.",
+"GP1003":"Your computer repair is in progress. Technician assigned: Gregory.",
+"GP1004":"Your tablet repair is complete. Payment received."
+};
+
+if(tickets[id]){
+status.innerHTML = tickets[id];
+status.style.color = "green";
+} else {
+status.innerHTML = "Ticket ID not found. Please check again.";
+status.style.color = "red";
+}
+
+}
+
+function checkTicket(){
+
+let id = document.getElementById("ticketID").value;
+let status = document.getElementById("ticketStatus");
+
+// Example repair tickets
+let tickets = {
+"GP1001":"Your phone repair is complete. Ready for pickup.",
+"GP1002":"Your laptop is being repaired. Estimated ready in 2 days.",
+"GP1003":"Your computer repair is in progress. Technician assigned: Gregory.",
+"GP1004":"Your tablet repair is complete. Payment received."
+};
+
+if(tickets[id]){
+status.innerHTML = tickets[id];
+status.style.color = "green";
+} else {
+status.innerHTML = "Ticket ID not found. Please check again.";
+status.style.color = "red";
+}
+
+}// Example customers and tickets
+const customers = {
+    "Promise": { password: "1234", tickets: {
+        "GP1001":"Phone repair complete. Ready for pickup.",
+        "GP1005":"Laptop repair in progress. Ready in 2 days."
+    }},
+    "Benjamin": { password: "abcd", tickets: {
+        "GP1002":"Tablet repair complete. Ready for pickup."
+    }},
+    "Naomie": { password: "5678", tickets: {
+        "GP1003":"Computer repair in progress. Technician assigned: Gregory."
+    }}
+};
+
+function login(){
+    let user = document.getElementById("username").value;
+    let pass = document.getElementById("password").value;
+    let message = document.getElementById("loginMessage");
+
+    if(customers[user] && customers[user].password === pass){
+        message.innerHTML = "Login successful. Welcome, " + user + "!";
+        message.style.color = "green";
+
+        // Save logged in user
+        sessionStorage.setItem("loggedInUser", user);
+
+        // Redirect to dashboard
+        window.location.href = "dashboard.html";
+    } else {
+        message.innerHTML = "Incorrect username or password.";
+        message.style.color = "red";
+    }
+}
+
 
 
