@@ -1,149 +1,125 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Gregory Phone & Computer Services</title>
-<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gregory Phone and Computer Services</title>
 <link rel="stylesheet" href="style.css">
+
+
+<meta name="description" content="Gregory Phone and Computer Services in Johannesburg. Phone repair, laptop repair, virus removal and technical support.">
+
+<meta name="keywords" content="phone repair Johannesburg, laptop repair Mulbarton, computer services, Gregory phone repair">
+
+<meta name="author" content="Gregory Mcdonald Kapanga">
+
 </head>
 
-<script>
-function chat(){
-alert("Hello 👋 Welcome to Gregory Phone & Computer Services. How can we help you?");
-}
-</script>
-
-<button onclick="chat()">Live Chat</button>
+<div id="loader">Loading...</div>
 
 <body>
+ 
 
 <header>
-<div class="logo">
-<h2>GREGORY PHONE AND COMPUTER SERVICES</h2>
-</div>
+<button onclick="toggleMode()">🌙</button>
 
+
+<h1>GREGORY PHONE 📱 AND COMPUTER 💻 SERVICES 🛠</h1>
 <nav>
 <a href="#home">Home</a>
 <a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
-
+<!-- Hero Section -->
 <section id="home" class="hero">
-
-<h1>GREGORY PHONE & COMPUTER SERVICES</h1>
-
-<P class="subtittle">
-Proffessional Repairs • Fast Services • Reliable • Affordable • Trusted • Tech Services</P>
-
-<a class="whatsapp-button" href="https://wa.me/27842133696" target="_blank">
-Chat on WhatsApp
-</a>
-
-  
-
-<h2>OUR REPAIR GALLERY</h2>
-
-<div class="gallery">
- <img src="images/repair1.png" width="200">
- <ing src="images/repair2.png" width="200">
- <img src="images/repair3.png" width="200">
- </div>
+<h2>Phone & Computer Repair Experts</h2>
+<p>Fast • Affordable • Professional. Customer Satisfaction First</p>
 
 
+<div class="slider">
+
+<img class="slide" src="images/repair1.jpg">
+<img class="slide" src="images/repair2.jpg">
+<img class="slide" src="images/repair3.jpg">
+
+</div>
+
+
+<button onclick="contact()">Book Appointment Now</button>
 </section>
 
 
-<section id="services">
-
-<h2>Our Services</h2>
-
-<div class="services-container">
-
-<div class="service">
-<img src="images/phone-repair.jpg">
-<h3>Phone Repair</h3>
-<p>Screen replacement, unlocking, software repair.</p>
+<!-- Services Section -->
+<section id="services" class="services">
+<h2>OUR SERVICES 📱💻🛠</h2>
+<div class="service-box">
+<h3>📱 Phone Repair</h3>
+<p>Screen replacement, charging problems, software issues.</p>
 </div>
-
-<div class="service">
-<img src="images/computer-repair.jpg">
-<h3>Computer Repair</h3>
-<p>Windows installation, virus removal and upgrades.</p>
+<div class="service-box">
+<h3>💻 Computer Repair</h3>
+<p>Laptop repair, virus removal, system installation.</p>
 </div>
-
-<div class="service">
-<img src="images/tech-support.jpg">
-<h3>Tech Support</h3>
-<p>Home and business technical support.</p>
+<div class="service-box">
+<h3>🔧 Technical Support</h3>
+<p>Phone setup, software installation and upgrades.</p>
 </div>
+</section>
 
+<!-- Image Gallery -->
+<section id="gallery" class="gallery">
+<h2>CHECK OUR WORKS BELLOW ✅👇</h2>
+<div class="images">
+<img src="images/phone1.jpg" alt="Phone Repair">
+<img src="images/computer1.jpg" alt="Computer Repair">
+<img src="images/tech1.jpg" alt="Technical Support">
+<img src="images/repair1.png">
+<img src="images/repair2.jpg">
+<img src="images/repair3.jpg">
 </div>
 
 </section>
 
 
-<section id="contact">
+<section class="reviews">
 
-<h2>Contact Us</h2>
+<h2>Customer Reviews</h2>
 
-<p>📞 Phone: +27 63 342 6679</p>
-
-<p>💬 WhatsApp: +27 84 213 3696</p>
-
-<p>📍 Location: 24 Haselhout Road, Mulbarton, Johannesburg</p>
-
-
-
-
-
-
-
-<div class="booking-section">
-
-
-<h2>BOOK APPOINTMENT</h2>
-
-<form>
-
-<label>Your Name</label><br>
-<input type="text"><br><br>
-
-<label>Your Phone Number 👇</label><br>
-<input type="tel"><br><br>
-
-<label>Device Type💻📱</label><br>
-<input type="text"><br><br>
-
-<label>Date</label><br>
-<input type="date"><br><br>
-
-<button type="submit">BOOK APPOINTMENT</button>
-</form>
-
+<div class="review">
+⭐⭐⭐⭐⭐ 
+<p>Very fast phone repair service. Highly recommended!</p>
+<strong>- John M</strong>
 </div>
 
-<div class="Pay-for-services section">
-
-<h2>PAY FOR SERVICES</h2>
-<a href="https://paypal.me/Gregory">
-<button>Pay Now</button>
-</a>
-
-<h2>Book on WhatsApp</h2>
-
-<a href="https://wa.me/278421336996">
-<button>BOOK REPAIR NOW</button>
-</a>
-
+<div class="review">
+⭐⭐⭐⭐⭐ 
+<p>My laptop was fixed the same day. Professional work.</p>
+<strong>- Sarah K</strong>
 </div>
 
+<div class="review">
+⭐⭐⭐⭐⭐ 
+<p>Best computer technician in Mulbarton.</p>
+<strong>- David L</strong>
+</div>
+
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+<h2>CONTACT US NOW 👇👇</h2>
+<p>📞 Call: +27633426679</p>
+<p>💬 WhatsApp: +27842133696</p>
+<p>📍 Mulbarton Johannesburg</p>
+
+
+<h3>FIND US HERE 📍🌍👇</h3>
 
 <iframe
-src="https://www.google.com/maps/place/24+Haselhout+Rd,+Mulbarton,+Johannesburg+South,+2059/@-26.2999118,28.0627901,15z/data=!4m6!3m5!1s0x1e95059e543e9f43:0x49af8b83290558ca!8m2!3d-26.2999118!4d28.0627901!16s%2Fg%2F11j2yns1s5?utm_campaign=ml-ardl&g_ep=Eg1tbF8yMDI2MDMwMl8wIJvbDyoASAJQAQ%3D%3D
-"
+src="https://www.google.com/maps?q=24%20Haselhout%20Road%20Mulbarton%20Johannesburg&output=embed"
 width="100%"
 height="300"
 style="border:0;"
@@ -151,25 +127,31 @@ allowfullscreen=""
 loading="lazy">
 </iframe>
 
-<a class="whatsapp-button" href="https://wa.me/27842133696" target="_blank">
-Send WhatsApp Message
-</a>
+<form id="bookingForm">
+
+<input type="text" id="name" placeholder="Your Name" required>
+
+<input type="tel" id="phone" placeholder="Your Phone Number" required>
+
+<textarea id="problem" placeholder="Describe your problem" required></textarea>
+
+<button type="submit">Book Appointment</button>
+
+</form>
+
+
 
 </section>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/+27842133696" target="_blank" class="whatsapp-btn">💬 WhatsApp</a>
 
-
+<!-- Footer -->
 <footer>
-
-<p>© 2026 Gregory Phone & Computer Services</p>
-
+<p>© 2026 Gregory Phone and Computer Services</p>
 </footer>
 
-<a href="hhtps://wa.me/27842133696"
-class="froating-whatsapp"
-target="_blank">
-💬
-</a>
-
-
+<script src="script.js"></script>
 </body>
 </html>
+
+

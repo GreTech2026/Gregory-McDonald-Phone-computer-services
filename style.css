@@ -1,194 +1,165 @@
-html{
-scroll-behavior:smooth;
-}
 
 body{
+font-family: Arial;
 margin:0;
-font-family:Arial, Helvetica, sans-serif;
 background:#f4f4f4;
 }
 
-
-/* HEADER */
-
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
+background:#111;
+color:white;
 padding:20px;
-background:#13c299;
-color:rgb(234, 236, 239);
+text-align:center;
 }
 
 nav a{
 color:white;
-margin:10px;
+margin:15px;
 text-decoration:none;
 font-weight:bold;
 }
-
-nav a:hover{
-color:#00ffd5;
-}
-
-
-/* HERO */
 
 .hero{
-text-align:center;
-padding:120px 20px;
-background:linear-gradient(#0a2540,#1a3c6e);
+background:linear-gradient(45deg,#0f2027,#203a43,#2c5364);
 color:white;
-}
-
-.hero h1{
-font-size:48px;
-margin-bottom:25px;
-}
-
-.hero p{
-font-size:20px;
-}
-
-
-/* SERVICES */
-
-#services{
-padding:60px 20px;
 text-align:center;
+padding:100px 20px;
 }
 
-.services-container{
-display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;
+.hero button{
+padding:15px 25px;
+background:#00c3ff;
+border:none;
+font-size:18px;
+cursor:pointer;
 }
 
-.service{
-background:rgb(75, 184, 171);
+.services{
+text-align:center;
+padding:50px;
+}
+
+.service-box{
+background:white;
 padding:20px;
-width: 300px;
-border-radius:10px;
-box-shadow:0px 5px 15px rgba(0,0,0,0.1);
-}
-
-.service img{
-width: 100%;
-height: 250px;
-object-fit: cover;
-border-radius: 20px;
-}
-
-
-/* OUR REPAIR GALLERY */
-
-.our-repair-gallery{
-    background-color: #9f409a;
-    text-align: left;
-    color: #050606;
-    padding: 80px; 
-}
-
-
-/* CONTACT */
-
-#contact{
-background:#b0900e;
-color:rgb(8, 115, 192);
-text-align: center;
-padding:80px 30px;
-}
-
-
-/* WHATSAPP BUTTON */
-
-.whatsapp-button{
+margin:20px;
 display:inline-block;
-background:#25D366;
+width:250px;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+.contact{
+background:#222;
 color:white;
-padding:15px 30px;
-margin-top:20px;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
+text-align:center;
+padding:40px;
 }
-
-.whatsapp-button:hover{
-background:#1ebe5b;
-}
-
-
-/* FOOTER */
 
 footer{
 text-align:center;
+padding:10px;
+background:black;
+color:white;
+}
+
+
+/* Reset + Body */
+body{margin:0;font-family:Arial,sans-serif;background:#f4f4f4;scroll-behavior:smooth;}
+header{background:#111;color:white;padding:20px;text-align:center;position:sticky;top:0;z-index:999;}
+nav a{color:white;margin:15px;text-decoration:none;font-weight:bold;transition:0.3s;}
+nav a:hover{color:#00c3ff;}
+
+/* Hero Section */
+.hero{background:linear-gradient(45deg,#0f2027,#203a43,#2c5364);color:white;text-align:center;padding:100px 20px;}
+.hero button{padding:15px 25px;background:#00c3ff;border:none;font-size:18px;cursor:pointer;transition:0.3s;}
+.hero button:hover{background:#0077a3;}
+
+/* Services */
+.services{text-align:center;padding:50px;}
+.service-box{background:white;padding:20px;margin:20px;display:inline-block;width:250px;box-shadow:0 5px 10px rgba(0,0,0,0.2);transition:0.3s;}
+.service-box:hover{transform:translateY(-10px);box-shadow:0 10px 20px rgba(0,0,0,0.3);}
+
+/* Gallery */
+.gallery{text-align:center;padding:50px;}
+.gallery img{width:250px;margin:10px;border-radius:10px;transition:0.3s;}
+.gallery img:hover{transform:scale(1.1);}
+
+/* Contact */
+.contact{background:#222;color:white;text-align:center;padding:40px;}
+.contact input, .contact textarea{width:80%;padding:10px;margin:10px 0;border:none;border-radius:5px;}
+.contact button{padding:15px 25px;background:#00c3ff;border:none;font-size:18px;cursor:pointer;}
+.contact button:hover{background:#0077a3;}
+
+/* WhatsApp Floating Button */
+.whatsapp-btn{position:fixed;bottom:20px;right:20px;background:#25d366;color:white;padding:15px;border-radius:50%;font-size:24px;text-decoration:none;box-shadow:0 5px 10px rgba(0,0,0,0.3);transition:0.3s;}
+.whatsapp-btn:hover{transform:scale(1.2);}
+
+/* Footer */
+footer{text-align:center;padding:10px;background:black
+}
+
+
+.reviews{
+text-align:center;
+padding:50px;
+background:#f9f9f9;
+}
+
+.review{
+background:white;
+margin:20px auto;
 padding:20px;
+max-width:500px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+
+.slider{
+width:100%;
+max-height:400px;
+overflow:hidden;
+}
+
+.slide{
+width:100%;
+height: 400px;
+object-fit: cover;
+display:none;
+}
+
+.dark{
 background:#111;
 color:white;
 }
 
-.logo img{
-height: 110px;
+#loader{
+position:fixed;
+width:100%;
+height:100%;
+background:white;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+z-index:9999;
 }
 
-iframe{
-    margin: top 20px;
-    border-radius: 10px;
+.gallery img{
+ width: 350px;
+ height: 250px;
+ object-fit: cover;
+ margin: 15px;
+ border: radius 10px;
+ transition: 0.3s;
 }
 
-.floating-whatapp{
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background: #07e559;
-    color: #f4f4f4;
-    font-size: 30px;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    text-decoration: none;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0,0.6);
-
+.gallery img:hover{
+ transition:scale(1.1);  
 }
 
-.floating-whatsapp:hover{
-    background:#1ebe5b;
+.images{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
 }
 
-.main-tittle{
- font-size:60px;
- font-weight: 900;
- text-align: center;
- letter-spacing:3px;
- text-shadow:4px 4px rgba(0,0,0,0,0.7);
- margin-bottom:20px;
-}
-
-.subtittle{
-font-size:22px;
-text-align:center;
-letter-spacing:1px;
-text-shadow:2px 2px 6px rgba(0,0,0,0,0,6); 
-margin-bottom:30px;
-}
-
-img{
-max-width: 100%;
-height: auto;
-}
-
-form{
-background-color: #18cece;
-padding: 25px;
-border-radius: 15px;
-
-}
-
-.booking-section {
-    background-color: #bf6868;
-    padding: 60px;
-}
