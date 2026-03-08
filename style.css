@@ -1,6 +1,6 @@
 
 body{
-font-family: Arial;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 margin:0;
 background:#f4f4f4;
 }
@@ -64,7 +64,7 @@ color:white;
 
 
 /* Reset + Body */
-body{margin:0;font-family:Arial,sans-serif;background:#f4f4f4;scroll-behavior:smooth;}
+body{margin:0;font-family:Arial;background:#f4f4f4;scroll-behavior:smooth;}
 header{background:hsl(202, 88%, 51%);color:white;padding:20px;text-align:center;position:sticky;top:0;z-index:999;}
 nav a{color:white;margin:15px;text-decoration:none;font-weight:bold;transition:0.3s;}
 nav a:hover{color:#00c3ff;}
@@ -81,7 +81,7 @@ nav a:hover{color:#00c3ff;}
 
 /* Gallery */
 .gallery{text-align:center;padding:50px;}
-.gallery img{width:250px;margin:10px;border-radius:10px;transition:0.3s;}
+.gallery img{width: 250px;margin:10px;border-radius:10px;transition: o.3s}
 .gallery img:hover{transform:scale(1.1);}
 
 /* Contact */
@@ -117,15 +117,22 @@ box-shadow:0 5px 10px rgba(0,0,0,0.1);
 .slider{
 width:100%;
 max-height:400px;
-overflow:hidden;
+overflow-wrap: normal;
 }
 
 .slide{
 width:100%;
 height: 400px;
 object-fit: cover;
-display:none;
+display: flex;
 }
+
+.slide img{
+width: 100%;
+height: fit-content;
+}
+
+
 
 .dark{
 background:#111;
@@ -133,11 +140,11 @@ color:white;
 }
 
 #loader{
-position:fixed;
+position: absolute;
 width:100%;
 height:100%;
 background:rgb(18, 185, 190);
-display:flex;
+display: block;
 justify-content:center;
 align-items:center;
 font-size:30px;
@@ -145,11 +152,11 @@ z-index:9999;
 }
 
 .gallery img{
- width: 350px;
- height: 250px;
- object-fit: cover;
+ width: 100%;
+ height:auto;
+ object-fit: fill;
  margin: 15px;
- border: radius 10px;
+ border-radius: 8px;
  transition: 0.3s;
 }
 
@@ -301,3 +308,112 @@ background:#333;
 margin-top:15px;
 font-weight:bold;
 }
+
+.design-services{
+background: linear-gradient(135deg,#1e3c72,#2a5298);
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+.design-services h2{
+font-size:32px;
+margin-bottom:10px;
+font-family:'Segoe UI',sans-serif;
+}
+
+.design-intro{
+max-width:700px;
+margin:auto;
+font-size:18px;
+line-height:1.6;
+margin-bottom:40px;
+}
+.design-list{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.design-card{
+background:rgb(21, 194, 113);
+color:#333;
+width:260px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(187, 41, 143, 0.2);
+transition:0.3s;
+}
+
+.design-card:hover{
+transform:translateY(-10px);
+}
+
+.design-card h3{
+color:#2a5298;
+font-size:20px;
+margin-bottom:10px;
+}
+
+.design-card p{
+font-size:15px;
+}
+
+.design-services{
+background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+padding:50px 20px;
+text-align:center;
+}
+
+.design-services h2{
+font-size:32px;
+margin-bottom:10px;
+font-family: 'Segoe UI', sans-serif;
+}
+
+.tagline{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.design-list{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.design-box{
+background:white;
+color:#333;
+padding:20px;
+border-radius:10px;
+width:250px;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+
+}
+
+.design-box h3{
+    color:#ff6600;
+}
+
+.contact-message{
+    margin-top:30px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.design-services{
+    text-align: center;
+}
+
+.design-services{
+    background-color: #13d7e6;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+
